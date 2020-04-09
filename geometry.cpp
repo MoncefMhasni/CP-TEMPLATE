@@ -64,6 +64,7 @@ public :
 
 };
 bool collinear(const point &a, const point &b, const point &c){
+    // returns true if the three are collinear
     ll o = (b-a)*(c-a);
     return o == 0;
 }
@@ -135,6 +136,7 @@ public :
         return ans;
     }
     bool is_inside(const point &a) const{
+        // Ray casting algorithm to check if a point is inside a polygon
         point b(a.getx() + lim,a.gety() + 1);
         segment A(a,b);
         int x = 0;
