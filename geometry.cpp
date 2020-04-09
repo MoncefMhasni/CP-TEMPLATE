@@ -3,11 +3,13 @@
 #pragma GCC optimize("O2")
 #endif
 #define ll long long
+#define hypot(x,y) sqrt(x*x+y*y)
 using namespace std;
 const double pi = acos(-1);
 const double eps = 1e-6;
 const double inf = LLONG_MAX>>1;
 const double lim = 1e9 + 1;
+
 class point{
     ll x, y;
 public :
